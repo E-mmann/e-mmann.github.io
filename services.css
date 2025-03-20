@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+    --clr-light: #20222F;
+    --clr-dark: #1D1F29;
+    --clr-primary: #fff;
+    --clr-secondary: #8C98C6;
+    --clr-accent: #252B42;
+    --mb-hover: #333A55;
+    --btn-hover:var(--clr-primary);
+  
+    --background: var(--clr-dark);
+    --foreground: var(--clr-light);
+}
+body{
+    background-image: url(docs3.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imt {
+    border-radius: 30px;
+}
+
+.aye {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    position: relative;
+    top: 8em;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    padding: 1.25em;
+    background-color: transparent;
+    backdrop-filter: blur(10px) brightness(90%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.plush {
+    border-radius: 30px;
+    margin: 20px;
+    background-color: rgba(241, 202, 228, 0.479);
+    color: white;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.lute {
+    color: yellow;
+}
+.doers {
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.gojo{
+    font-weight: bold;
+}

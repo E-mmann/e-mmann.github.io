@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="contact.css" type="text/css">
+  </head>
+
+  
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"><img src="logo.png" width="80px"></a>
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html" class="show">home</a>
+        <a href="servives.html">service</a>
+        <a href="about.html">About us</a>
+        <a href="ourteam.html">our team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="header-app-btn" href="appointment.html">Book a Visit</a>
+  </header>
+  <div class="nav-bg"></div>
+
+  <section class="container">
+      <div class="form">
+
+        <div class="contact-info">
+          <h2 class="title">Get in Touch</h2>
+          <p class="text">Have questions? Need to schedule an appointment? Contact us today.</p>
+
+          <div class="info">
+            <div class="information">
+              <span><i class="fa-solid fa-location-dot"></i>P.O BOX MC 23, Takoradi - Ghana</span>
+            </div>
+            <div class="information">
+              <span><i class="fa-solid fa-envelope"></i>info@bestdent.com</span>
+            </div>
+            <div class="information">
+              <span><i class="fa-solid fa-phone"></i>0500000001</span>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="appointment.php" method="post">
+            <h3 class="title">Contact us</h3>
+
+            <div class="input-container">
+              <input required id="full name" autocomplete="off" type="text" name="name" class="input" />
+              <label for="full name">Full name</label>
+              <span>Full name</span>
+            </div>
+
+            <div class="input-container">
+              <input id="email" autocomplete="off" type="email" name="email" class="input" />
+              <label for="email">Email</label>
+              <span>Email</span>
+            </div>
+
+            <div class="input-container">
+              <input id="phone" autocomplete="off" type="tel" name="phone" class="input" />
+              <label for="phone">Phone</label>
+              <span>Phone</span>
+            </div>
+
+            <div class="input-container textarea">
+              <textarea id="message" name="message" class="input"></textarea>
+              <label for="message">Message</label>
+              <span>Message</span>
+            </div>
+
+            <input type="submit" value="Submit" class="btn">
+          </form>
+        </div>
+
+      </div>
+  </section>
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

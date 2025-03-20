@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+    --clr-light: #20222F;
+    --clr-dark: #1D1F29;
+    --clr-primary: #fff;
+    --clr-secondary: #8C98C6;
+    --clr-accent: #252B42;
+    --mb-hover: #333A55;
+    --btn-hover:var(--clr-primary);
+  
+    --background: var(--clr-dark);
+    --foreground: var(--clr-light);
+}
+body{
+    background-image: url(docs3.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    position: relative;
+    top: 8em;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 1.25em;
+    background-color: transparent;
+    backdrop-filter: blur(10px) brightness(90%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+.mission-vision-box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.mission,.vision{
+    background-color: var(--clr-secondary);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.our-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.team-box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.team-player{
+    background-color: var(--clr-primary);
+    flex-basis: 33.33%;
+    flex-wrap: wrap;
+    height: 18rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.apart{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    padding: 1rem 0;
+}
+h2 {
+    font-size: 1.5rem;
+    text-align: start;
+    color: aliceblue;
+    padding: .5rem 0;
+}
+p {
+    /* text-align: left; */
+    color: aliceblue;
+}
+p strong{
+    color: var(--clr-light);
+}
+.team-player h3{
+    color: var(--clr-secondary);
+}
+ul {
+    list-style: none;
+    margin: 0 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(50px) brightness(6%);
+    z-index: 100;
+}
+ul li{
+    color: aliceblue;
+    line-height: 2rem;
+}
+ul li strong{
+    color: black;
+}
+.testimony-box{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+}
+.testimonial {
+    font-style: italic;
+    color: lightgray;
+}
+.contact-info {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+}

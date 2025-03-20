@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+    --clr-light: #20222F;
+    --clr-dark: #1D1F29;
+    --clr-primary: #fff;
+    --clr-secondary: #8C98C6;
+    --clr-accent: #252B42;
+    --mb-hover: #333A55;
+    --btn-hover:var(--clr-primary);
+  
+    --background: var(--clr-dark);
+    --foreground: var(--clr-light);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.info{
+    text-align: center;
+    margin-top: 50px;
+    font-size: xx-large;
+    color: aliceblue;
+    font-family: serif;
+}
+
+
+.avatar{
+    width: 25%;
+    height: fit-content;
+    margin-left: 10px;
+    border-radius: 5%;
+    
+}
+
+.card1{
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    border-bottom: 5px solid #d8cefe;
+    color: #2b2839;
+    background-color: #ddebf8;
+    border-radius: 1rem;
+    
+}
+
+.text{
+    padding-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.aye {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    position: relative;
+    top: 8em;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 1.25em;
+    background-color: transparent;
+    backdrop-filter: blur(10px) brightness(90%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    position: relative;
+    top: 8em;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 1.25em;
+    background-color: transparent;
+    backdrop-filter: blur(10px) brightness(90%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+body{
+    height: 100vh;
+    background-image: url("large-Smile-Guy-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 5%;
+}

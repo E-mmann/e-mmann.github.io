@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --clr-light: #20222F;
+  --clr-dark: #1D1F29;
+  --clr-primary: #fff;
+  --clr-secondary: #8C98C6;
+  --clr-accent: #252B42;
+  --mb-hover: #333A55;
+  --btn-hover:var(--clr-primary);
+
+  --background: var(--clr-dark);
+  --foreground: var(--clr-light);
+}
+/*.light{
+  --clr-light: #F7F9FF;
+  --clr-dark: #fff;
+  --clr-primary: #1D1F29;
+  --clr-secondary: #63687D;
+  --clr-accent: #F1F3FA;
+  --mb-hover: #E1E4F0;
+  --btn-hover:#848BAB;
+
+  --background: var(--clr-dark);
+  --foreground: var(--clr-light);
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+.header {
+  height: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 100;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+.header:hover::before {
+  left: 100%;
+}
+.logo {
+  color: var(--clr-primary);
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+.navbar a {
+  text-transform: capitalize;
+  color: var(--clr-primary);
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: var(--mb-hover);
+}
+#menu-icon {
+  font-size: 36px;
+  color: var(--clr-dark);
+  display: none;
+}
+.header-app-btn{
+  text-decoration: none;
+  background-color: var(--clr-primary);
+  color: var(--clr-dark);
+  padding: .5rem 1rem;
+  z-index: 10;
+  border-radius: .7rem;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 0 20px #fff;
+}
+.header-app-btn:hover{
+  background: transparent;
+  backdrop-filter: none;
+  color: aliceblue;
+  border: 1px solid var(--btn-hover);
+}
+.show{
+  color: var(--clr-dark);
+}
+
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    color: #1D1F29;
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+  }
+  .nav-bg {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: rgba(195, 195, 195, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    display: none;
+  }
+  .nav-bg.active {
+    display: block;
+  }
+  .header-app-btn{
+    display: none;
+  }
+}
